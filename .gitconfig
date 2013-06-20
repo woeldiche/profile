@@ -1,0 +1,24 @@
+[user]
+	name = Jesper Wøldiche
+	email = jesper@woeldiche.dk
+[core]
+	autocrlf = input
+	excludesfile = /Users/woeldiche/.gitignore_global
+	editor = nano
+[color]
+	ui = true
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[diff]
+	tool = Kaleidoscope
+[difftool]
+	prompt = false
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+[mergetool]
+	prompt = false
+[merge]
+	tool = Kaleidoscope
+[push]
+	default = simple
