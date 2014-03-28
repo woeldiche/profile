@@ -3,7 +3,7 @@
 	email = jesper@woeldiche.dk
 [core]
 	autocrlf = input
-	excludesfile = /Users/woeldiche/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	editor = nano
 [color]
 	ui = true
