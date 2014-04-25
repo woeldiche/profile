@@ -1,6 +1,9 @@
-export PATH=$(brew --prefix josegonzalez/php/php53)/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/ruby/2.1.0/bin/:$PATH
+export PATH=/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:$PATH
 alias flushdns='dscacheutil -flushcache && sudo killall -HUP mDNSResponder'
-alias opens='open -a Sublime\ Text\ 2'
+alias opens='open -a Sublime\ Text'
 alias ll='ls -lha'
 alias bstunnel='java -jar /BrowserStackTunnel.jar xChIiyYMRzKxewEbMDdR'
 alias untar='tar -zxvf'
+
+source ~/.profile
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
