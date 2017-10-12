@@ -1,10 +1,11 @@
 # Set paths and variables
-export PATH=/usr/local/share/npm/bin:$PATH
-export PATH=/usr/local/bin:$PATH
-#export PATH=/usr/local/sbin:$(brew --prefix homebrew/php/php56)/bin:$PATH
-export PATH=./node_modules/.bin:$PATH
+export PATH="/usr/local/share/npm/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+export PATH="./node_modules/.bin:$PATH"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="$HOME/.yarn/bin:$PATH"
 export NVM_DIR="/Users/Jesper/.nvm"
 
 # Create aliases
