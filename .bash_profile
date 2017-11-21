@@ -12,6 +12,7 @@ export NVM_DIR="/Users/Jesper/.nvm"
 alias flushdns='dscacheutil -flushcache && sudo killall -HUP mDNSResponder'
 #alias opens='open -a Sublime\ Text'
 alias opena='open -a Atom'
+alias openc='open -a Visual\ Studio\ Code'
 alias ll='ls -lha'
 alias untar='tar -zxvf'
 alias gsub-all='git submodule foreach git pull --rebase'
