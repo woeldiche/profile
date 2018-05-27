@@ -19,17 +19,18 @@ alias gsub-all='git submodule foreach git pull --rebase'
 alias gupd='git pull --rebase && git push'
 
 function npmls() {
-  npm ls "$@" | grep ^[└├]
+  npm list "$@" --depth 0
 }
 
 # Set ulimits
 ulimit -n 1600
 #ulimit -u 2048
 
+# JEWO: Uninstalled NVM for now.
 # Load rvm / nvm profiles
-[[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-[[ -s "$NVM_DIR/nvm.sh" ]] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+#[[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+#[[ -s "$NVM_DIR/nvm.sh" ]] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # Load keys
 ssh-add ~/.ssh/jesper
