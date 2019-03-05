@@ -6,7 +6,7 @@ export PATH="./node_modules/.bin:$PATH"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="$HOME/.yarn/bin:$PATH"
-export NVM_DIR="/Users/Jesper/.nvm"
+#export NVM_DIR="/Users/Jesper/.nvm"
 
 # Create aliases
 alias flushdns='dscacheutil -flushcache && sudo killall -HUP mDNSResponder'
